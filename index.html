@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Ascensão | Estudos</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">◈ <span>ASCENSÃO</span><small>ESTUDOS</small></div>
+        <div class="profile">
+          <div class="avatar">✦</div>
+          <div>
+            <strong id="username">Visitante</strong
+            ><small id="sync">Progresso local</small>
+          </div>
+        </div>
+        <div class="navtitle">NAVEGAÇÃO</div>
+        <button class="nav active" id="homeBtn">▦ &nbsp; Visão geral</button
+        ><button class="nav" id="resetBtn">↻ &nbsp; Reiniciar módulo</button>
+        <div class="sidebottom">
+          <button class="outline" id="loginBtn">Entrar com Google</button
+          ><button class="outline" id="logoutBtn" hidden>Sair da conta</button
+          ><small>Estude até dominar. Sem limite de tentativas.</small>
+        </div>
+      </aside>
+      <main>
+        <header>
+          <div>
+            <div class="eyebrow">PLATAFORMA DE REVISÃO</div>
+            <h1>Seu próximo nível começa aqui.</h1>
+            <p>Treine, aprenda com os erros e alcance 100% em cada módulo.</p>
+          </div>
+          <div class="levelbox">
+            <span id="level">NÍVEL 1</span><strong id="xp">0 XP</strong>
+            <div class="progress"><i id="xpbar"></i></div>
+          </div>
+        </header>
+        <section class="stats">
+          <div class="stat">
+            <small>DISCIPLINAS</small><strong id="subjectCount">—</strong>
+          </div>
+          <div class="stat">
+            <small>MÓDULOS DOMINADOS</small><strong id="mastered">0</strong>
+          </div>
+          <div class="stat">
+            <small>QUESTÕES NO BANCO</small><strong id="total">—</strong>
+          </div>
+          <div class="stat">
+            <small>TENTATIVAS</small><strong id="attempts">0</strong>
+          </div>
+        </section>
+        <section id="dashboard">
+          <div class="sectionhead">
+            <div>
+              <h2>Escolha sua missão</h2>
+              <p>
+                Conteúdo confirmado e revisões complementares, organizados por
+                matéria.
+              </p>
+            </div>
+            <input id="search" placeholder="Buscar matéria ou módulo..." />
+          </div>
+          <div id="subjects" class="cards"></div>
+        </section>
+        <section id="study" hidden>
+          <div class="studyhead">
+            <button id="backBtn" class="outline">← Voltar</button
+            ><span id="roundLabel"></span>
+          </div>
+          <div class="questioncard">
+            <div class="questionmeta">
+              <span id="subjectLabel"></span><span id="questionNumber"></span>
+            </div>
+            <div class="progress"><i id="questionBar"></i></div>
+            <div class="tag" id="typeLabel"></div>
+            <h2 id="prompt"></h2>
+            <div id="answers"></div>
+            <div id="feedback" class="feedback" hidden></div>
+            <div class="actions">
+              <button class="primary" id="checkBtn">Verificar resposta</button
+              ><button class="primary" id="nextBtn" hidden>
+                Próxima questão →
+              </button>
+            </div>
+          </div>
+          <div class="note">
+            Questões discursivas são avaliadas por você, comparando sua resposta
+            ao modelo. Nenhuma correção automática é apresentada como
+            definitiva.
+          </div>
+        </section>
+        <footer>
+          ASCENSÃO ESTUDOS · Conteúdo de revisão educacional · Firebase opcional
+        </footer>
+      </main>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
